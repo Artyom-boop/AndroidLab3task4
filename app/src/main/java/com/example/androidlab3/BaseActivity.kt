@@ -21,4 +21,9 @@ abstract class BaseActivity : AppCompatActivity() {
             else -> false
         }
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

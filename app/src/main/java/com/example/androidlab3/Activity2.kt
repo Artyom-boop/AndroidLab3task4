@@ -1,7 +1,6 @@
 package com.example.androidlab3
 
 import android.content.Intent
-
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.os.Bundle
 import com.example.androidlab3.databinding.Activity2Binding
@@ -13,6 +12,7 @@ class Activity2 : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding = Activity2Binding.inflate(layoutInflater)
         binding.toFirst.setOnClickListener {
             finish()
